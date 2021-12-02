@@ -17,6 +17,7 @@ public class Hero {
 	public void attack(Matango m) {
 		System.out.println(this.name + "はお化けキノコ" + m.suffix + "を攻撃した！");
 		System.out.println(m.suffix + "に5ポイントのダメージを与えた");
+		m.hp = m.hp - 5;
 	}
 	
 	public void sleep() {
@@ -41,5 +42,12 @@ public class Hero {
 		System.out.println(this.name + "は、逃げ出した！");
 		System.out.println("GAMEOVER");
 		System.out.println("最終HPは" + this.hp + "でした");
+	}
+	
+	public void status() {
+		System.out.println(this.name + "のhpは" + this.hp);
+		if (this.sword != null) {
+			System.out.println("使用する武器は" + this.sword.name);
+		}
 	}
 }
