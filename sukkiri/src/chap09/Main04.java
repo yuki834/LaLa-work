@@ -9,8 +9,8 @@ public class Main04 {
 		Matango m = new Matango();
 		m.suffix = 'A';
 		
-		Hero h = new Hero();
-		h.name = "タロウ";
+		Hero h = new Hero("タロウ");
+		h.takeWeapon();
 		
 		m.attack(h);
 		h.attack(m);
