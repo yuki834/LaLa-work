@@ -1,0 +1,125 @@
+\documentclass[dvipdfmx]{jsarticle}
+
+\include{begin}
+
+\section{問題}
+
+\subsection{p.392のコードを入力する}
+
+\begin{lstlisting}[caption=Item.java]
+ package world;
+
+ public class Item {
+   public String name;
+   public int price;
+
+   public Item(String name) {
+     this.name = name;
+     this.price = 0;
+   }
+
+   public Item(String name, int price) {
+     this.name = name;
+     this.price = price;
+   }
+ }
+\end{lstlisting}
+
+Weapon.javaは以下でよい。
+
+\begin{lstlisting}[caption=Weapon.java]
+ package world;
+ 
+ public class Weapon extends Item {
+
+ }
+\end{lstlisting}
+
+p.393のコードを以下のように入力する。
+
+\begin{lstlisting}[caption=Main02.java]
+ package chap10;
+
+ import world.Weapon;
+
+ public class Main02 {
+
+   public static void main(String[] args) {
+     Weapon w = new Weapon();
+     System.out.println(w.name + ":" + w.price);
+   }
+ }
+\end{lstlisting}
+
+\subsection{表示されるエラーの意味を考える}
+
+\begin{quote}
+「暗黙的スーパー・コンストラクター Item() は、デフォルト・コンストラクターに
+ついては未定義です。明示的コンストラクターを定義する必要があります」
+\end{quote}
+
+つまり、Weapon.java は内部に何の記述も無いが、
+Main02.java で new Weapon() が実行されているので、Weapon.javaの中の
+引数なしのコンストラクター（暗黙的）が実行される。
+
+Weapon.javaは子クラスなので、親クラスの引数なしコンストラクターが実行される。
+したがって、Weapon.javaは実質的に以下のコードになる。
+
+\begin{lstlisting}[caption=Weapon.java]
+ public class Weapon extends Item {
+   public Weapon() {
+     super();
+   }
+ }
+\end{lstlisting}
+
+ところが、Item.java には、引数ありのコンストラクターがあるため、
+引数なしのコンストラクターは定義されないと「無い」ものとして扱われる。
+だから、エラーが出る。
+
+\subsection{エラーを解決する}
+
+エラーを解決するには、以下の3通りが考えられる。それぞれ実行してみて、確認してみる。
+
+\begin{enumerate}
+ \item Item.java に 引数なしのコンストラクターを記述する。
+ \item Weapon.java の コンストラクターを修正する。p.394の方法がこれである。
+ \item Main02.java を new Weapon("バズーカ") とする。これは Weapon.java の
+コンストラクターも修正する必要がある。
+\end{enumerate}
+
+
+\section{問題}
+
+Item.java に以下のメソッドをつくる。
+
+\begin{lstlisting}[caption=Item.java]
+ public void takeItem() {
+   System.out.println(this.name + "をとる。");
+ }
+ public void useItem() {
+   System.out.println(this.name + "を使う。");
+ }
+\end{lstlisting}
+
+Weapon.java に以下のメソッドをつくる。
+
+\begin{lstlisting}[caption=Weapon.java]
+ public void useItem() {
+   System.out.println(this.name + "をぶっ放す。");
+ }
+\end{lstlisting}
+
+これを Main02.java で使ってみる。
+
+
+\section{問題}
+
+\textsf{chap09} に出現しているエラーを解決する。
+エラーのほとんどは Hero.java や Matango.java のメソッドに関するものだから、
+Hero.java や Matango.java に不足しているメソッドを追加してやればよい。
+
+
+\include{end}
+
+%% 修正時刻： Sat Dec  4 21:47:56 2021
