@@ -16,7 +16,7 @@ public class Main02 {
 		h.sword = s;
 		System.out.println("私の名前は" + h.name);
 		System.out.println("現在の武器は" + h.sword.name);
-		h.attack();
+		// h.attack();
 		Matango m = new Matango();
 		m.suffix = 'Z';
 		h.attack(m);
