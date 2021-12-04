@@ -42,4 +42,5 @@ META-INF/
 *.out
 *.aux
 !main.pdf
+!mondai-2021-12-08.pdf
 
