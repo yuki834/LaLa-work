@@ -72,6 +72,20 @@ public class Weapon extends Item {
 
 問題B
 
+Item.java に以下のメソッドをつくる。
+
+public void take() { System.out.println(this.name + "をとる"); }
+public void use() { System.out.println(this.name + "を使う"); }
+
+Weapon.java に以下のメソッドをつくる。
+
+public void use() { System.out.println(this.name + "をぶっ放す"); }
+
+これを Main02.javaで使ってみる。
+
+
+問題C
+
 chap09に出現しているエラーを解決する。
 エラーのほとんどは Hero.java や Matango.java のメソッドに関するものだから、
 Hero.java や Matango.java に不足しているメソッドを追加してやればよい。
