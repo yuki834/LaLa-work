@@ -1,0 +1,39 @@
+\documentclass[uplatex, dvipdfmx]{jsarticle}
+
+\input{title}
+\input{begin}
+
+\renewcommand{\include}[1]{}
+
+\renewcommand\documentclass[2][]{}
+\renewcommand{\lstlistingname}{リスト}
+
+%% --------- title page ------------------
+% \maketitle
+
+% \pagenumbering{roman}
+% \setcounter{tocdepth}{2}
+% \tableofcontents
+
+% \newpage
+%% --------- title page end --------------
+
+%% -------- title ------------------
+\newcommand{\mytitle}[3]
+{%
+\begin{center}
+ {\LARGE\bf #1} \\
+ #2 \\
+ {\Large #3}
+\end{center}
+}%
+\mytitle{gitでブランチを使う Ver1.0 }{2021/12/06 Mon.}{Seiichi Nukayama}
+%% --------- title end -------------
+\pagenumbering{arabic}
+
+\input{tex1}
+
+
+\input{end}
+
+%% 修正時刻： Sun Dec  5 11:51:06 2021
