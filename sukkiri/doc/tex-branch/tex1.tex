@@ -51,6 +51,8 @@ $>$ git \ branch \\
 
 \subsection{ブランチを作成する}
 
+ブランチ関係のコマンドは、とりあえずは以下。
+
 \begin{tcolorbox}
  [title=ブランチの作成, fonttitle=\gtfamily]
 $>$ git \ branch \ rensyu \quad (``rensyu'' というブランチを作成)
@@ -79,9 +81,25 @@ $>$ git \ branch \ -d \ rensyu
 $>$ git \ branch \ -m \ rensyu \ work
 \end{tcolorbox}
 
+3番目の''ブランチを作成するとともに、そのブランチをカレントブランチとする''が
+手っとり早い。
 
+\fbox{$>$ \ git \ checkout \ -b \ rensyu \ }
+
+\vspace{3mm}
+確認する
+
+\vspace{3mm}
+\begin{tabular}{|l|} \hline
+$>$ git branch \\
+\qquad main \\
+\quad $*$ rensyu \\ \hline
+\end{tabular}
+\vspace{3mm}
 
 \subsection{ブランチをプッシュする}
+
+このブランチでいろいろ試したあと、リモート(Github)にアップしたいとする。
 
 \fbox{\ git \ status \ } とすると、現在のブランチが表示されるので、
 そのブランチを指定してプッシュすることになる。
@@ -103,11 +121,14 @@ git status とすると、現在 rensyuブランチであることがわかる�
 \begin{tabular}{|l|} \hline
 $>$ git \ add \ .(ピリオド) \\
 $>$ git \ commit \ -m \ ``Main.javaを追加'' \\
-$>$ git \ push \ -u \ origin \ rensyu \\ \hline
+$>$ git \ push \ -u \ origin \ \underline{rensyu} \\ \hline
 \end{tabular}
 \vspace{3mm}
 
-\newpage
+最後の push コマンドのところで ``rensyu''ブランチを指定している。
+
+% \newpage
+\vspace{10mm}
 \section{学校でブランチを作成し、Github にプッシュした。それを自宅で
 とりこみたい}
 
@@ -180,7 +201,8 @@ $*$ rensyu \\ \hline
 \end{tabular}
 \vspace{3mm}
 
-\newpage
+% \newpage
+\vspace{10mm}
 \section{''rensyu''ブランチの変更を''main''に取り込む}
 
 ``rensyu''ブランチは試しにいろいろやってみるブランチなので、
@@ -201,6 +223,15 @@ $*$ rensyu \\ \hline
 $>$ git \ checkout \ main \\
 $>$ git \ merge \ rensyu \ -\--no-ff
 \end{tcolorbox}
+
+-\--no-ff オプションについては、以下を参照。
+
+\begin{itemize}
+ \item \href{https://qiita.com/nog/items/c79469afbf3e632f10a1}{gitのmerge --no-ff のススメ}
+ \item \href{https://yu8mada.com/2018/08/15/the-difference-between-the-git-merge-options-ff-no-ff-and-ff-only/}{git merge オプションの --ff, --no-ff, --ff-only の違い}
+\end{itemize}
+
+
 
 \section{リモート(Github)に存在する''rensyu''ブランチを削除する}
 
@@ -228,4 +259,4 @@ $>$ git \ push \ -\--delete \ origin \ rensyu  \qquad (リモートのブラン�
 
 \include{end}
 
-%% 修正時刻： Sun Dec  5 15:25:48 2021
+%% 修正時刻： Mon Dec  6 07:40:31 2021
