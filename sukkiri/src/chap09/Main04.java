@@ -10,7 +10,7 @@ public class Main04 {
 		m.suffix = 'A';
 		
 		Hero h = new Hero("タロウ");
-		h.takeWeapon();
+		// h.takeWeapon();
 		
 		m.attack(h);
 		h.attack(m);

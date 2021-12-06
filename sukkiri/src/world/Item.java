@@ -4,7 +4,6 @@ public class Item {
 	public String name;
 	public int price;
 	
-	
 	public Item(String name) {
 		this.name = name;
 		this.price = 0;
@@ -15,4 +14,11 @@ public class Item {
 		this.price = price;
 	}
 
+	public void takeItem() {
+		System.out.println(this.name + "を取る");
+	}
+
+	public void useItem() {
+		System.out.println(this.name + "を使う");
+	}
 }

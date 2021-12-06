@@ -3,9 +3,14 @@ package world;
 public class Hero {
 	public String name = "ミナト";
 	public int hp = 100;       // HP
+	public Sword sword;
 	
 	public Hero() {
 		System.out.println("Heroのコンストラクタが動作");
+	}
+	
+	public Hero(String name) {
+		this.name = name;
 	}
 
 	public void attack(Matango m) {
@@ -19,7 +24,11 @@ public class Hero {
 	}
 	
 	public final void slip() {
-		System.out.println("sulip");
+		System.out.println(this.name + "転んだ");
 		
+	}
+	
+	public void status() {
+		System.out.println("名前:" + this.name + " HP:" + this.hp);
 	}
 }
