@@ -215,6 +215,17 @@ $*$ rensyu \\ \hline
 
 \fbox{ \ git \ branch}
 
+\vspace{3mm}
+現在の変更を リモート(Github) にプッシュしていないのなら、まずプッシュする。
+
+\vspace{3mm}
+\begin{tabular}{|l|} \hline
+ $>$ git \ add \ . (ピリオド) \\
+ $>$ git \ commit \ -m \ ``(メッセージを書く)`` \\
+ $>$ git \ push \ -u \ origin \ rensyu \\ \hline
+\end{tabular}
+\vspace{3mm}
+
 以下のように、``main''ブランチに戻ってから ``rensyu''ブランチの内容を取り込む
 
 \begin{tcolorbox}
@@ -232,7 +243,7 @@ $>$ git \ merge \ rensyu \ -\--no-ff
 \end{itemize}
 
 
-
+\newpage
 \section{リモート(Github)に存在する''rensyu''ブランチを削除する}
 
 ``rensyu''ブランチもその役目を果たし、削除する日がやってきた。
@@ -259,4 +270,4 @@ $>$ git \ push \ -\--delete \ origin \ rensyu  \qquad (リモートのブラン�
 
 \include{end}
 
-%% 修正時刻： Mon Dec  6 07:40:31 2021
+%% 修正時刻： Tue Dec  7 08:12:54 2021
