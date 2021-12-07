@@ -43,4 +43,5 @@ META-INF/
 *.pdf
 *.tex~
 *~
+*.gz
 
