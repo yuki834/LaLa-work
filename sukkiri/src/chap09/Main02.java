@@ -11,11 +11,11 @@ public class Main02 {
 		s.name = "炎の剣";
 		s.damage = 10;
 		Hero h = new Hero();
-		h.name = "ミナト";
-		h.hp = 100;
-		h.sword = s;
-		System.out.println("私の名前は" + h.name);
-		System.out.println("現在の武器は" + h.sword.name);
+		h.setName("ミナト");
+		h.setHp(100);
+		h.setSword(s);
+		System.out.println("私の名前は" + h.getName());
+		System.out.println("現在の武器は" + h.getSword().name);
 		// h.attack();
 		Matango m = new Matango();
 		m.suffix = 'Z';

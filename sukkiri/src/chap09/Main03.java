@@ -7,10 +7,10 @@ public class Main03 {
 
 	public static void main(String[] args) {
 		Hero h1 = new Hero();
-		h1.name = "ミナト";
+		h1.setName("ミナト");
 
 		Hero h2 = new Hero();
-		h2.name = "アサカ";
+		h2.setName("アサカ");
 
 		Wizard w = new Wizard();
 		w.name = "スガワラ";

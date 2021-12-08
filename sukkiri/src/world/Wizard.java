@@ -12,8 +12,8 @@ public class Wizard extends Character {
 	}
 
 	public void heal(Hero h) {
-		h.hp = h.hp + 10;
-		System.out.println(h.name + "のHPを10回復した！");
+		h.setHp(h.getHp() + 10);
+		System.out.println(h.getName() + "のHPを10回復した！");
 	}
 
 	@Override

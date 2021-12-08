@@ -8,7 +8,7 @@ public class WereWolf extends WalkingMonster {
 	
 	@Override
 	public void attack(Hero h) {
-		System.out.println(h.name + "を噛みつく");
+		System.out.println(h.getName() + "を噛みつく");
 		
 	}
 

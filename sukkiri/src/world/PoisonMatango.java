@@ -12,8 +12,8 @@ public class PoisonMatango extends Matango {
 		super.attack(h);
 		if (this.count > 0) {
 			System.out.println("さらに毒の胞子をばらまいた！");
-			int damage = h.hp / 5;
-			h.hp = h.hp - damage;
+			int damage = h.getHp() / 5;
+			h.setHp(h.getHp() - damage);
 			System.out.println(damage + "ポイントのダメージ");
 			this.count--;
 		} else {
