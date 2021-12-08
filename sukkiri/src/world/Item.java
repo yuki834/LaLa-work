@@ -14,10 +14,6 @@ public class Item {
 		this.price = price;
 	}
 	
-	public void takeItem() {
-		System.out.println(this.name + "をとる。");
-	}
-	
 	public void use() {
 		System.out.println(this.name + "を使う。");
 	}
