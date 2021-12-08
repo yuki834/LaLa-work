@@ -11,7 +11,7 @@ public class Dancer extends Character {
 	}
 
 	@Override 
-	public void attack(Matango m) {
+	public void attack(Monster m) {
     	System.out.println(this.name + "の攻撃！");
 		m.hp = m.hp - 3;
 		System.out.println("敵に3ポイントのダメージを与えた！");

@@ -1,6 +1,6 @@
 package world;
 
-public class Hero {
+public class Hero extends Character {
 	public String name = "ミナト";
 	public int hp = 100;       // HP
 	public Sword sword;
@@ -13,7 +13,7 @@ public class Hero {
 		this.name = name;
 	}
 
-	public void attack(Matango m) {
+	public void attack(Monster m) {
 		System.out.println(this.name + "の攻撃！");
 		m.hp = m.hp - 5;
 		System.out.println("5ポイントのダメージを与えた");

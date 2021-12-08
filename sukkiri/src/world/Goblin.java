@@ -1,7 +1,5 @@
 package world;
 
-import chap11_interface.WalkingMonster;
-
 public class Goblin extends WalkingMonster {
 	
 	public Goblin() {
@@ -17,5 +15,8 @@ public class Goblin extends WalkingMonster {
 	public void attack() {
 		System.out.println("だれかれかまわず斬りつける");
 	}
-
+	
+	public void run() {
+		System.out.println("ゴブリンは、腕をふって逃げ出した。");
+	}
 }

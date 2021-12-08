@@ -1,17 +1,18 @@
 package chap12;
 
+import world.Character;
 import world.Matango;
 import world.Wizard;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Wizard w = new Wizard();
-		Character c = w;
+		Character c = new Wizard();
+		Wizard w = (Wizard) c;
 		Matango m = new Matango();		
 		c.name = "アサカ";
 		c.attack(m);
-		c.fireball(m);
+		// c.fireball(m);
 	}
 
 }

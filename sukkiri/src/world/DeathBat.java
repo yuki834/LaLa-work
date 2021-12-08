@@ -1,7 +1,5 @@
 package world;
 
-import chap11_interface.FlyingMonster;
-
 public class DeathBat extends FlyingMonster {
 
 	public DeathBat() {

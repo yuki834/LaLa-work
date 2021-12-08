@@ -1,6 +1,6 @@
 package world;
 
-public class Matango {
+public class Matango extends Monster {
 	public int hp;
 	// public final int LEVEL = 10;
 	public char suffix;

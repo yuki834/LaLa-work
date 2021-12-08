@@ -5,11 +5,15 @@ package world;
  * @author Seiichi Nukayama
  * Thief -- 泥棒
  */
-public class Thief {
+public class Thief extends Character {
 	String name;
 	public int hp;
 	int mp;
-
+	
+	public Thief () {
+		this("五右衛門", 40, 5);
+	} 
+	
 	public Thief (String name, int hp, int mp) {
 		this.name = name;
 		this.hp = hp;
@@ -22,6 +26,11 @@ public class Thief {
 	
 	public Thief(String name) {
 		this(name, 40, 5);
+	}
+
+	@Override
+	public void attack(Monster m) {
+		System.out.println("5ポイントの攻撃");
 	}
 
 }

@@ -1,7 +1,5 @@
 package world;
 
-import chap11_interface.WalkingMonster;
-
 public class WereWolf extends WalkingMonster {
 
 	public WereWolf() {
