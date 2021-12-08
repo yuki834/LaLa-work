@@ -48,6 +48,7 @@ public class Hero extends Character {
 		
 	}
 	
+
 	public void status() {
 		System.out.println("名前:" + this.name + " HP:" + this.hp);
 	}

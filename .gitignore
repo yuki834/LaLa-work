@@ -36,6 +36,7 @@ META-INF/
 !jstl-api-1.2.jar
 !jstl-impl-1.2.jar
 
+<<<<<<< HEAD
 # for TeX
 *.tex~
 *.pdf
@@ -44,5 +45,14 @@ META-INF/
 !main.pdf
 !mondai-2021-12-08.pdf
 !gitでブランチ-v1.0.pdf
+=======
+# for Tex
+*.aux
+*.log
+*.out
+*.pdf
+*.tex~
+*~
+>>>>>>> 0eb46b5448abc36cfda58d44b03ea3e6ee5b3c18
 *.gz
 
