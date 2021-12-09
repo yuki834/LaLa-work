@@ -3,6 +3,9 @@ package world;
 public abstract class Monster {
 	public int hp;
 	public int mp;
+	public String name;
+	
+	public Monster() {}
 	
 	public abstract void attack(Hero h);
 	
