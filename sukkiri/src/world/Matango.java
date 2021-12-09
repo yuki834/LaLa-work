@@ -1,9 +1,9 @@
 package world;
 
 public class Matango extends Monster {
-	public int hp;
+	private int hp;
 	// public final int LEVEL = 10;
-	public char suffix;
+	private char suffix;
 	
 	public Matango() {
 		this.hp = 50;
@@ -27,5 +27,17 @@ public class Matango extends Monster {
 	
 	public void status() {
 		System.out.println(this.suffix + "のHPは" + this.hp);
+	}
+	public int getHp() {
+		return hp;
+	}
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+	public char getSuffix() {
+		return suffix;
+	}
+	public void setSuffix(char suffix) {
+		this.suffix = suffix;
 	}
 }

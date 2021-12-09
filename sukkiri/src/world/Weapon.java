@@ -6,6 +6,6 @@ public class Weapon extends Item {
 	}
 
 	public void useItem() {
-		System.out.println(this.name + "をぶっ放す");
+		System.out.println(this.getName() + "をぶっ放す");
 	}
 }

@@ -26,7 +26,7 @@ public class Wizard extends Character {
 	public void fireball(Matango m) {
 		System.out.println(this.getName() + "は火の玉を放った！");
 		System.out.println("敵に20ポイントのダメージ");
-		m.hp = m.hp - 20;
+		m.setHp(m.getHp() - 20);
 		this.mp = this.mp - 5;
 	}
 }
