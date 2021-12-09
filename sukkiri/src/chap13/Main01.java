@@ -10,6 +10,8 @@ public class Main01 {
 		h.setName("猿飛佐助");
 		King k = new King();
 		k.talk(h);
+		
+		System.out.println(h.getName());
 
 	}
 

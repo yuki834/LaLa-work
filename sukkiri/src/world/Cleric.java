@@ -5,13 +5,13 @@ import java.util.Random;
 public class Cleric {
 	public String name;
 	int hp = 50;
-	final int HP_MAX = 50;
+	static final int HP_MAX = 50;
 	int mp = 10;
-	final int MP_MAX = 10;
+	static final int MP_MAX = 10;
 	
 	public void selfAid() {
 		this.mp = this.mp - 5;
-		this.hp = this.HP_MAX;
+		this.hp = HP_MAX;
 		System.out.println
 			(this.name + "は セルフエイド という魔法を使った。");
 		System.out.println(this.name + "のMPを5使った。");

@@ -87,4 +87,10 @@ public class Hero extends Character {
 	public void setSword(Sword sword) {
 		this.sword = sword;
 	}
+	
+	public String toString() {
+	    String text = "名前:" + this.getName() + " HP:" + this.getHp() +
+					" アイテム:" + this.getSword().name;
+	    return this.getName();
+	}
 }
