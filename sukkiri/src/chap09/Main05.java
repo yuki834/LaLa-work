@@ -7,14 +7,14 @@ public class Main05 {
 	public static void main(String[] args) {
 		int baseHp = 25;
 		Thief t = new Thief("Asaka", baseHp);
-		System.out.println(baseHp + " : " + t.hp);
-		t.hp = heal(baseHp);
+		System.out.println(baseHp + " : " + t.getHp());
+		t.setHp(heal(baseHp));
 		heal(t);
-		System.out.println(baseHp + " : " + t.hp);
+		System.out.println(baseHp + " : " + t.getHp());
 	}
 	
 	public static void heal (Thief thief) {
-		thief.hp = thief.hp + 10;
+		thief.setHp(thief.getHp() + 10);
 	}
 	
 	public static int heal(int hp) {

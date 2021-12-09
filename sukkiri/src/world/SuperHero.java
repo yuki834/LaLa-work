@@ -1,7 +1,7 @@
 package world;
 
 public class SuperHero extends Hero {
-	boolean flying;
+	private boolean flying;
 	
 	public SuperHero() {
 		System.out.println("SuperHeroのコンストラクタが動作");

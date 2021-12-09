@@ -6,9 +6,9 @@ package world;
  * Thief -- 泥棒
  */
 public class Thief extends Character {
-	String name;
-	public int hp;
-	int mp;
+	private String name;
+	private int hp;
+	private int mp;
 	
 	public Thief () {
 		this("五右衛門", 40, 5);

@@ -1,7 +1,7 @@
 package world;
 
 public class Wizard extends Character {
-	int mp = 30;
+	private int mp = 30;
 	
 	public Wizard(String name) {
 		super(name);
@@ -28,5 +28,13 @@ public class Wizard extends Character {
 		System.out.println("敵に20ポイントのダメージ");
 		m.setHp(m.getHp() - 20);
 		this.mp = this.mp - 5;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
 	}
 }
