@@ -1,8 +1,8 @@
 package world;
 
 public abstract class Monster {
-	private int hp;
-	private int mp;
+	public int hp;
+	public int mp;
 	
 	public abstract void attack(Hero h);
 	
