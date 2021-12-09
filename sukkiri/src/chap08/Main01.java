@@ -26,7 +26,7 @@ public class Main01 {
 		h.run();
 		
 		Cleric cleric = new Cleric();
-		cleric.name = "ゆうゆう";
+		cleric.setName("ゆうゆう");
 		cleric.selfAid();
 		cleric.pray(2);
 	}

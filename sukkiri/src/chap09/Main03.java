@@ -13,8 +13,8 @@ public class Main03 {
 		h2.setName("アサカ");
 
 		Wizard w = new Wizard();
-		w.name = "スガワラ";
-		w.hp = 50;
+		w.setName("スガワラ");
+		w.setHp(50);
 		
 		w.heal(h1);
 		w.heal(h2);

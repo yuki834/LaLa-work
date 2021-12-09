@@ -16,8 +16,8 @@ public class Main04 {
 		c[4] = new Wizard();
 		
 		for (Character ch : c) {
-			ch.hp = ch.hp + 50;
-			System.out.println(ch.name + ":" + ch.hp);
+			ch.setHp(ch.getHp() + 50);
+			System.out.println(ch.getName() + ":" + ch.getHp());
 		}
 	}
 
