@@ -1,7 +1,7 @@
 package world;
 
 public class PoisonMatango extends Matango {
-	int count = 5;
+	private int count = 5;
 	
 	public PoisonMatango(char suffix) {
 		// this.suffix = suffix;
@@ -19,5 +19,13 @@ public class PoisonMatango extends Matango {
 		} else {
 			System.out.println("毒攻撃はもうできません");
 		}
+	}
+
+	public int getCount() {
+		return count;
+	}
+
+	public void setCount(int count) {
+		this.count = count;
 	}
 }

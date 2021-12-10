@@ -4,7 +4,7 @@ public class Goblin extends WalkingMonster {
 	
 	public Goblin() {
 		System.out.println("ゴブリンだよ～");
-		this.hp = 70;
+		this.setHp(70);
 	}
 
 	@Override

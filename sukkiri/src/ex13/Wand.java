@@ -8,13 +8,24 @@ public class Wand {
 		return name;
 	}
 	public void setName(String name) {
+
+		if (name.length() < 3) {
+			throw new IllegalArgumentException();
+		}
+
 		this.name = name;
 	}
 	public double getPower() {
 		return power;
 	}
 	public void setPower(double power) {
+
+		if (power < 0.5 || power > 100) {
+			throw new IllegalArgumentException();
+		}
 		this.power = power;
 	}
 	
-}
+	
+}	
+>>>>>>> prepare

@@ -1,7 +1,7 @@
 package world;
 
 public class Wizard extends Character {
-	int mp = 30;
+	private int mp = 30;
 	
 	public Wizard(String name) {
 		super(name);
@@ -18,15 +18,23 @@ public class Wizard extends Character {
 
 	@Override
 	public void attack(Monster m) {
-		System.out.println(this.name + "の攻撃！");
+		System.out.println(this.getName() + "の攻撃！");
 		System.out.println("敵に3ポイントのダメージ");
-		m.hp = m.hp - 3;
+		m.setHp(m.getHp() - 3);
 	}
 	
 	public void fireball(Matango m) {
-		System.out.println(this.name + "は火の玉を放った！");
+		System.out.println(this.getName() + "は火の玉を放った！");
 		System.out.println("敵に20ポイントのダメージ");
-		m.hp = m.hp - 20;
+		m.setHp(m.getHp() - 20);
 		this.mp = this.mp - 5;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
 	}
 }

@@ -10,7 +10,7 @@ public class Main {
 		Character c = new Wizard();
 		Wizard w = (Wizard) c;
 		Matango m = new Matango();		
-		c.name = "アサカ";
+		c.setName("アサカ");
 		c.attack(m);
 		// c.fireball(m);
 	}

@@ -13,12 +13,12 @@ public class Main01 {
 		// System.out.println("勇者" + h.name + "を生み出しました！");
 		
 		Matango m1 = new Matango();
-		m1.hp = 50;
-		m1.suffix = 'A';
+		m1.setHp(50);
+		m1.setSuffix('A');
 		
 		Matango m2 = new Matango();
-		m2.hp = 40;
-		m2.suffix = 'B';
+		m2.setHp(40);
+		m2.setSuffix('B');
 		
 		h.slip();
 		m1.run();
@@ -26,7 +26,7 @@ public class Main01 {
 		h.run();
 		
 		Cleric cleric = new Cleric();
-		cleric.name = "ゆうゆう";
+		cleric.setName("ゆうゆう");
 		cleric.selfAid();
 		cleric.pray(2);
 	}

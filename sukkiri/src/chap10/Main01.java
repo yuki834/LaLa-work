@@ -8,7 +8,7 @@ public class Main01 {
 
 	public static void main(String[] args) {
 		Matango m = new Matango();
-		m.suffix = 'B';
+		m.setSuffix('B');
 		
 		Hero h = new Hero();
 		h.attack(m);

@@ -1,9 +1,9 @@
 package world;
 
 public abstract class Monster {
-	public int hp;
-	public int mp;
-	public String name;
+	private int hp;
+	private int mp;
+	private String name;
 	
 	public Monster() {}
 	

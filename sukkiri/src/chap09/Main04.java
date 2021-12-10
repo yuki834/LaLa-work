@@ -7,7 +7,7 @@ public class Main04 {
 
 	public static void main(String[] args) {
 		Matango m = new Matango();
-		m.suffix = 'A';
+		m.setSuffix('A');
 		
 		Hero h = new Hero("タロウ");
 		// h.takeWeapon();
