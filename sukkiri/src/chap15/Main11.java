@@ -1,17 +1,23 @@
 package chap15;
 
-import util.Check;
+import java.util.Calendar;
+import java.util.Date;
 
 public class Main11 {
 
 	public static void main(String[] args) {
-		String name = "MINATO01";
-		if (Check.isValidPlayerName(name)) {
-			System.out.println("正しい名前です");
-		} else {
-			System.out.println("間違った名前です");
-		}
 
+		Calendar c = Calendar.getInstance();
+		
+		c.set(2019, 8, 22, 1, 23, 45);
+		c.set(Calendar.MONTH, 9);
+		Date d = c.getTime();
+		System.out.println(d);
+		
+		Date now = new Date();
+		c.setTime(now);
+		int y = c.get(Calendar.YEAR);
+		System.out.println("今年は" + y + "年です");
 	}
 
 }

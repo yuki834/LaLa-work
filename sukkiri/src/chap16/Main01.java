@@ -1,6 +1,7 @@
 package chap16;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import world.DeathBat;
@@ -13,29 +14,37 @@ public class Main01 {
 	public static void main(String[] args) {
 		List<Monster> monsterList = new ArrayList<>();
 		
-		DeathBat deathBat = new DeathBat();
-		deathBat.setName("地獄こうもり");
-		monsterList.add(deathBat);
+		DeathBat bat = new DeathBat();
+		bat.setName("地獄コウモリ");
+		monsterList.add(bat);
 		
 		Goblin goblin = new Goblin();
-		goblin.setName("あくどいゴブリン");
+		goblin.setName("凶悪ゴブリン");
 		monsterList.add(goblin);
 		
-		WereWolf wereWolf = new WereWolf();
-		wereWolf.setName("凶悪な狼");
-		monsterList.add(wereWolf);
+		WereWolf wolf = new WereWolf();
+		wolf.setName("噛みつきウルフ");
+		monsterList.add(wolf);
+		
+		// monsterList.remove(1);
 		
 		for (Monster m : monsterList) {
 			System.out.println(m.getName());
 		}
 		
-		monsterList.remove(1);
+		System.out.println(monsterList.size());
+		
+		// イテレ＝タ
+		Iterator<Monster> it = monsterList.iterator();
+		while (it.hasNext()) {
+			Monster m = it.next();
+			System.out.println(m.getName());
+		}
+		
+		
+		
+		
 
-		for (Monster m : monsterList) {
-			System.out.println(m.getName());
-		}
-		
-		
 	}
 
 }

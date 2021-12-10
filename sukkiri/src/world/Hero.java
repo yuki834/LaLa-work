@@ -4,6 +4,8 @@ public class Hero extends Character {
 	private String name = "ミナト";
 	private int hp = 100;       // HP
     private Sword sword;
+    private String job;
+    private int gold;
 	
 	public Hero() {
 		System.out.println("Heroのコンストラクタが動作");
@@ -93,5 +95,21 @@ public class Hero extends Character {
 	    String text = "名前:" + this.getName() + " HP:" + this.getHp() +
 					" アイテム:" + this.getSword().getName();
 	    return this.getName();
+	}
+
+	public String getJob() {
+		return job;
+	}
+
+	public void setJob(String job) {
+		this.job = job;
+	}
+
+	public int getGold() {
+		return gold;
+	}
+
+	public void setGold(int gold) {
+		this.gold = gold;
 	}
 }
