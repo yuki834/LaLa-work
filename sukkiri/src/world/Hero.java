@@ -91,7 +91,7 @@ public class Hero extends Character {
 	
 	public String toString() {
 	    String text = "名前:" + this.getName() + " HP:" + this.getHp() +
-					" アイテム:" + this.getSword().name;
+					" アイテム:" + this.getSword().getName();
 	    return this.getName();
 	}
 }

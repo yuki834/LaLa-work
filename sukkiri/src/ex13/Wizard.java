@@ -35,30 +35,23 @@ public class Wizard {
 	}
 
 	public void setMp(int mp) {
-<<<<<<< HEAD
-=======
+
 		if (mp < 0) {
 			throw new IllegalArgumentException();
 		}
->>>>>>> prepare
+
 		this.mp = mp;
 	}
 
 	public String getName() {
 		return name;
 	}
-<<<<<<< HEAD
-	// p.501参照
-	public void setName(String name) {
-		if (name.length() < 3) {
-			throw new IllegalArgumentException
-			("名前は3文字以上です");
-=======
+
 
 	public void setName(String name) {
 		if (name.length() < 3) {
 			throw new IllegalArgumentException();
->>>>>>> prepare
+
 		}
 		this.name = name;
 	}
@@ -68,15 +61,11 @@ public class Wizard {
 	}
 
 	public void setWand(Wand wand) {
-<<<<<<< HEAD
-		this.wand = wand;
-	}
 
-=======
 		if (wand == null ) {
 			throw new IllegalArgumentException();
 		}
 		this.wand = wand;
 	}
->>>>>>> prepare
+
 }

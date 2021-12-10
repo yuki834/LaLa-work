@@ -28,4 +28,12 @@ public abstract class Monster {
 	public void setMp(int mp) {
 		this.mp = mp;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }	

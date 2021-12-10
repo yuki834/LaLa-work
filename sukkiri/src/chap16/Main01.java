@@ -14,25 +14,25 @@ public class Main01 {
 		List<Monster> monsterList = new ArrayList<>();
 		
 		DeathBat deathBat = new DeathBat();
-		deathBat.name = "地獄こうもり";
+		deathBat.setName("地獄こうもり");
 		monsterList.add(deathBat);
 		
 		Goblin goblin = new Goblin();
-		goblin.name = "あくどいゴブリン";
+		goblin.setName("あくどいゴブリン");
 		monsterList.add(goblin);
 		
 		WereWolf wereWolf = new WereWolf();
-		wereWolf.name = "凶悪な狼";
+		wereWolf.setName("凶悪な狼");
 		monsterList.add(wereWolf);
 		
 		for (Monster m : monsterList) {
-			System.out.println(m.name);
+			System.out.println(m.getName());
 		}
 		
 		monsterList.remove(1);
 
 		for (Monster m : monsterList) {
-			System.out.println(m.name);
+			System.out.println(m.getName());
 		}
 		
 		
