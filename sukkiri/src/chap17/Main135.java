@@ -2,7 +2,7 @@ package chap17;
 
 import java.util.Scanner;
 
-public class Main01 {
+public class Main135 {
 	static Scanner scan;
 
 	public static void main(String[] args) {
