@@ -14,10 +14,13 @@ public class Main42 {
 			e.printStackTrace();
 			System.out.println("エラーです。中断します。");
 		} finally {
-			try {
-				fw.close();
-			} catch (IOException e) {
-				e.printStackTrace();
+			if (fw != null) {
+				try {
+					fw.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+					System.out.println("クローズできません");
+				}
 			}
 		}
 		

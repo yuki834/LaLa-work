@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /**
- * FileWriterクラスは AutoClosableインターフェースを実装している。
+ * FileWriterクラスは Closable、もしくは、AutoClosableインターフェースを実装している。
  * https://docs.oracle.com/javase/jp/8/docs/api/java/io/FileWriter.html
  * @author USER
  *

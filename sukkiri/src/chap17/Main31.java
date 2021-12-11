@@ -10,7 +10,7 @@ public class Main31 {
 		String numtext = scan.nextLine();
 		int num = Integer.parseInt(numtext);
 		System.out.println("数は " + num + " です。");
-
+		scan.close();
 	}
 
 }

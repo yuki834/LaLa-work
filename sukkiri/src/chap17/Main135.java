@@ -18,8 +18,6 @@ public class Main135 {
 	}
 	
 	public static void inputNum() throws NumberFormatException {
-		boolean mode = true;
-		
 		System.out.print("数を入力 > ");
 		String numtxt = scan.nextLine();
 		int num = Integer.parseInt(numtxt);
