@@ -1,1 +1,1 @@
-hello, World! and Bye!
+Hello! bye!
