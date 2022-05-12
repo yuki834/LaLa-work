@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Util {
 
-	public static int inputNum() throws CannotNumberException {
+	public static int inputNum() {
 		int num = 0;
 
 		System.out.print("数を入力> ");
@@ -13,7 +13,7 @@ public class Util {
 		try {
 			num = Integer.parseInt(text);
 		} catch (NumberFormatException e) {
-			throw new CannotNumberException
+			throw new CannotNumberRuntimeException
 				("数字ではありません");
 		} finally {
 			scan.close();
