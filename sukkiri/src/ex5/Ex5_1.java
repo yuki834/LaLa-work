@@ -8,11 +8,11 @@ public class Ex5_1 {
 	}
 	
 	public static void introduceOneself() {
-		System.out.println("名前を入力してください");
 		String name = "太郎";
 		int age = 15;
 		double height = 165.5;
-		char eto = '酉';
+//		char eto = '酉';
+		String eto = "酉";
 		System.out.println("名前は" + name + "年齢は" + age + "身長は" + height + "干支は" + eto);
 	}
 	
