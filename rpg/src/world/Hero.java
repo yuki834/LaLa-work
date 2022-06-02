@@ -1,8 +1,8 @@
 package world;
 
-public class Hero {
+public class Hero extends Character {
 	
-	public String name = "ミナト";
+	public String name;
 	public int hp = 100;
 	
 	public Hero() {
@@ -10,6 +10,7 @@ public class Hero {
 	}
 	public Hero(String name) {
 		this.name = name;
+//		super(name);
 	}
 		
 	public void attack(Matango m) {

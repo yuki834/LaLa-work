@@ -10,7 +10,7 @@ public class PoisonMatango extends Matango {
 	}
 	
 	public void attack(Hero h) {
-		
+		System.out.println("キノコの攻撃");
 		super.attack(h);
 		
 		if(pcount != 0) {
