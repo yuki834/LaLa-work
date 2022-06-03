@@ -13,15 +13,15 @@ public class PoisonMatango extends Matango {
 		System.out.println("キノコの攻撃");
 		super.attack(h);
 		
-		if(pcount != 0) {
-			System.out.println("さらに毒の胞子をばら撒いた");
-			int damage = h.hp / 5;
-			h.hp -= damage;
-			System.out.println(h.name + damage + "ポイントのダメージ");
-			pcount--;
-			System.out.println("毒攻撃残り回数:" + pcount);
+//		if(pcount != 0) {
+//			System.out.println("さらに毒の胞子をばら撒いた");
+////			int damage = h.hp / 5;
+////			h.hp -= damage;
+////			System.out.println(h.name + damage + "ポイントのダメージ");
+//			pcount--;
+//			System.out.println("毒攻撃残り回数:" + pcount);
 
-		}
+//		}
 	}
 }
 

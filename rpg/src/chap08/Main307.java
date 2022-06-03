@@ -10,9 +10,9 @@ public class Main307 {
 		Hero h = new Hero();
 		
 		// hフィールドに初期値を設定
-		h.name = "ミナト";
-		h.hp = 100;
-		System.out.println("勇者" + h.name + "を生み出した" );
+		h.setName("ミナト");
+//		h.hp = 100;
+		System.out.println("勇者" + h.getName() + "を生み出した" );
 
 		//お化けキノコよ、この仮想世界に生まれよ！
 		Matango m1 = new Matango();

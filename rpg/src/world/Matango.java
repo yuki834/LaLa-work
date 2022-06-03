@@ -15,9 +15,9 @@ public class Matango {
 	
 	public void attack(Hero h) {
 		System.out.println("お化けキノコ" + this.suffix + "の攻撃");
-		System.out.println("ヒーローに10のダメージ");
-		h.hp -= 10;
-		System.out.println("ヒーローのHP:" + h.hp);
+		System.out.println(h.getName() + "に10のダメージ");
+//		h.hp -= 10;
+//		System.out.println("ヒーローのHP:" + h.hp);
 	}
 	
 }

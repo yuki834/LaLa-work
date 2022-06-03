@@ -26,7 +26,7 @@ public class Main433 {
 //		System.out.println("mp:" + d.mp);
 	
 	Hero h = new Hero("田中");
-	h.sleep();
+//	h.sleep();
 	
 	SuperHero sh = new SuperHero("まえだ");
 	}
