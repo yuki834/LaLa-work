@@ -6,8 +6,14 @@ public class Rose extends Flower {
 	// しかし、このままだと、親クラスのフィールドを参照する。
 	// したがって、花 となる。
 	// public String name;
+	public Rose() {}
+	
+	public Rose(String name) {
+//		this.name = name;
+		super(name);
+	}
 	
 	public void smell () {
-		System.out.println(this.name + "はいい香りがする。");
+		System.out.println(this.getName() + "はいい香りがする。");
 	}
 }
