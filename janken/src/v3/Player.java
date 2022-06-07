@@ -8,6 +8,7 @@ public abstract class Player {
 	//次の手を決める戦略の型(インターフェース)
 	private NextHand nextHand;
 	
+	//
 	public Player(NextHand nextHand) {
 		this.nextHand = nextHand;
 	}
@@ -30,7 +31,7 @@ public abstract class Player {
 	}
 
 	public void setHand() {
-		this.hand = nextHand.decideHand();
+		this.hand = this.nextHand.decideHand();
 	}
 
 	public String getResult() {
