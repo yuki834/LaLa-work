@@ -4,11 +4,11 @@ import java.util.Random;
 
 public class Cleric {
 	
-	String name;
-	int hp = 50;
-	final int MAX_HP = 50;
-	int mp = 10;
-	final int MAX_MP = 10;
+	private String name;
+	private int hp = 50;
+	public static final int MAX_HP = 50;
+	private int mp = 10;
+	public static final int MAX_MP = 10;
 
 	public void selfAid(){
 	
@@ -39,6 +39,39 @@ public class Cleric {
 		System.out.println("聖職者は" + sec + "秒祈った" );
 		System.out.println("MPが" + kaihuku + "回復した" );
 		return kaihuku;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getHp() {
+		return hp;
+	}
+
+	public static int getMaxHp() {
+		return MAX_HP;
+	}
+
+	public int getMp() {
+		return mp;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setHp(int hp) {
+		this.hp = hp;
+	}
+
+	public void setMp(int mp) {
+		this.mp = mp;
+	}
+
+	@Override
+	public String toString() {
+		return "Cleric [name=" + name + ", hp=" + hp + ", mp=" + mp + "]";
 	}
 	
 }
