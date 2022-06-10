@@ -6,8 +6,7 @@ public class RandomNextHand implements NextHand {
 
 	@Override
 	public int decideHand() {
-		// 0がグー、1がチョキ、2がパー
-		//0~2のランダムな数をhandに代入しreturnで返す
+		// 0:グー  1:チョキ  2:パー
 		int hand = new Random().nextInt(3);
 		return hand;
 	}

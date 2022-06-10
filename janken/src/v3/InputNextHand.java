@@ -9,17 +9,14 @@ public class InputNextHand implements NextHand {
 	public int decideHand() {
 		int hand = -1;
 		do {
-			// 0がグー、1がチョキ、2がパー
 			System.out.println("手を選択してください");
-			System.out.println("0がグー、1がチョキ、2がパー");
+			System.out.println("0:グー 1:チョキ 2:パー");
 			System.out.print(" > ");
-			//エラーの検証
 			try {
-				hand = new Scanner(System.in).nextInt();
-			}catch(InputMismatchException e) {
-				//エラーが発生した場合に走る処理
-//				e.printStackTrace();
-				System.out.println("数字を入力してください");
+			    hand = new Scanner(System.in).nextInt();
+			} catch (InputMismatchException e) {
+				// e.printStackTrace();
+				System.out.println("数字を入力してください。");
 				hand = -1;
 			}
 		} while (hand < 0 || hand > 2);

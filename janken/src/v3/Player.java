@@ -1,22 +1,23 @@
 package v3;
 
 public abstract class Player {
-
 	private String name;
 	private int hand;
 	private String result;
-	//次の手を決める戦略の型(インターフェース)
+	// 次の手を決める戦略の型(インターフェース)
 	private NextHand nextHand;
 	
-	//
 	public Player(NextHand nextHand) {
 		this.nextHand = nextHand;
+		if (nextHand instanceof CleverNextHand) {
+			CleverNextHand cnh = (CleverNextHand) nextHand;
+			cnh.setPlayer(this);
+		}
 	}
 	
 	public String toString() {
 		return this.name + ":" + this.hand + ":" + this.result;
 	}
-	
 
 	public String getName() {
 		return name;
@@ -49,6 +50,4 @@ public abstract class Player {
 	public void setNextHand(NextHand nextHand) {
 		this.nextHand = nextHand;
 	}
-	
-	
 }
